@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+{% load staticfiles %}
+
+<head>
+    <title>{{title}}</title>
+
+    <link rel="stylesheet" href="{% static "css/style.css" %}"/>
+</head>
+<body class="bodyBackcolor">
+    <div class="centerAlign">
+        <h1 class="backColor">{{ header }}</h1>
+    </div>
+
+    {% if form.errors %}
+        <p style="color: red;">
+            Please correct the error{{ form.errors|pluralize }} below.
+        </p>
+    {% endif %}
+
+    <form action="" enctype="multipart/form-data"  method="post">
+        <table>
+            {{ form.as_table }}
+        </table>
+        {% csrf_token %}
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

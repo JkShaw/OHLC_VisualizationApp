@@ -1,0 +1,13 @@
+Django==1.9.7
+django-excel==0.0.4
+et-xmlfile==1.0.1
+jdcal==1.2
+openpyxl==2.3.5
+pyexcel==0.2.3
+pyexcel-io==0.2.1
+pyexcel-webio==0.0.7
+pyexcel-xls==0.2.0
+pyexcel-xlsx==0.2.0
+texttable==0.8.4
+xlrd==1.0.0
+xlwt==1.1.2
